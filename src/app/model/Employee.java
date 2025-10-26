@@ -1,15 +1,15 @@
-package model;
+package app.model;
 
 public class Employee {
 
-    private int employeeID;
+    private double employeeID;
     private String firstName;
     private String lastName;
     private String email;
     private String phone;
     private double worktimePerWeek;
 
-    public Employee(int _employeeID, String _firstName, String _lastName, String _email, String _phone, double _worktimePerWeek) {
+    public Employee(double _employeeID, String _firstName, String _lastName, String _email, String _phone, double _worktimePerWeek) {
         setEmployeeID(_employeeID);
         setFirstName(_firstName);
         setLastName(_lastName);
@@ -58,11 +58,11 @@ public class Employee {
         this.firstName = _firstName;
     }
 
-    public int getEmployeeID() {
+    public double getEmployeeID() {
         return employeeID;
     }
 
-    public void setEmployeeID(int _employeeID) {
+    public void setEmployeeID(double _employeeID) {
         this.employeeID = _employeeID;
     }
 }
